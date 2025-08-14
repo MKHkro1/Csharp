@@ -140,6 +140,32 @@ Virtual Linker /Glossary：虚拟链接
 
 
 
+CSS 代码：
+Hyphenation and Justification: 左右对齐
+
+Inline Block Embeds：引用注释区块无横线隔开
+
+Clutter-Free Headings: 简化标题层级
+
+Tag Pills：药丸标签
+(anki 紫，important 红，complete 绿，inprogress 橙)
+
+Smaller-scrollbar.：较小的滚动条
+
+Subtler-folding-gutter-arrows：增加增加折叠装订线箭头的大小并降低其不透明度，直到悬停。
+
+Enlarge-image-on-hover：悬停放大图像
+
+Nicer-checkboxes：todo 打勾，请将光标放在框后，按一次向左箭头，然后按退格键。
+
+Bigger-link-popup-preview：更大的链接弹出预览
+
+Custom-icons-for-specific-folders：自定义文件夹图标
+
+Yaml：笔记属性的悬浮
+
+
+
 
 
 
