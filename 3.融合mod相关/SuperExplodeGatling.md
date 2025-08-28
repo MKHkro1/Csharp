@@ -30,6 +30,6 @@ namespace SuperExplodeGatling;
 public class SuperDoomGaltling:MonoBehaviour
 {
     //植物ID，目前还不可以大于2048，也注意不要和游戏内的重复，19：52
-    public static int PlantID=1999;
+    public static int PlantID=667;
 }
 ```
