@@ -3,10 +3,10 @@ Core
 using System.Text;
 using Il2CppInterop.Runtime.Injection;
 using MelonLoader;
-[assembly:MelonInfo(typeof(SuperDoomGatling.Core),"SuperDoommGatling","1.0.0","likefengzi")]
+[assembly:MelonInfo(typeof(SuperExplodeGatling.Core),"SuperDoommGatling","1.0.0","likefengzi")]
 [assembly:MelonGame("LanPiaoPiao","PlantsVsZombiesRH")]
 [assembly:MelonlatformDomain(MelonPlatformDomainAttribute.CompatibleDomains.IL2CPP)]
-namespace SuperDoomGatling;
+namespace SuperExplodeGatling;
 
 public class core：MelonMod
 {
@@ -15,7 +15,7 @@ public class core：MelonMod
           //可以输出中文字符
           Console.OutputEncoding = Encoding.UTF8;
           //注册类
-          ClassInjector.RegisterTypeInIl2Cpp<SuperDoomGatling>();
+          ClassInjector.RegisterTypeInIl2Cpp<SuperExplodeGatling>();
           //读取刚刚的打包文件,获得资源文件
           var ab=CustomCore.GetAssetBundle(System.Reflection.Assembly.GetExecutingAssembly(),"superdoomgatling");
       }
@@ -25,7 +25,7 @@ public class core：MelonMod
 
 Plant
 ```C#
-namespace SuperDoomGatling;
+namespace SuperExplodeGatling;
 [RegisterTypeInIl2Cpp]
 public class SuperDoomGaltling:MonoBehaviour
 {
