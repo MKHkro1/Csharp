@@ -8,8 +8,8 @@ namespace 模板
     class Program
     {    //函数
          static void Main(string[] args)
-        {   //在控制台中打印出Hello world
-            Console.WriteLine("hello World!");
+        {   
+            
         }
     }
     
