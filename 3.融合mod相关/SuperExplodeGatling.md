@@ -18,6 +18,11 @@ public class core：MelonMod
           ClassInjector.RegisterTypeInIl2Cpp<SuperExplodeGatling>();
           //读取刚刚的打包文件,获得资源文件
           var ab=CustomCore.GetAssetBundle(System.Reflection.Assembly.GetExecutingAssembly(),"superdoomgatling");
+          //注册植物，
+          CustomCore.RegisterCustomPlant<SuperGatling,SuperExplodeGatling>(
+              //id
+              
+          );
       }
 }
 
@@ -29,7 +34,11 @@ namespace SuperExplodeGatling;
 [RegisterTypeInIl2Cpp]
 public class SuperDoomGaltling:MonoBehaviour
 {
-    //植物ID，目前还不可以大于2048，也注意不要和游戏内的重复，19：52
+    //植物ID，目前还不可以大于2048，也注意不要和游戏内的重复,2421
     public static int PlantID=667;
+    //子弹ID
+    public static BulletType BulletID=BulletType.bullet_;
+    
+    
 }
 ```
