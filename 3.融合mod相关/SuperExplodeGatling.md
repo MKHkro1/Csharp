@@ -1,3 +1,12 @@
+`Use in rider with net 6.
+`You neet to make a SuperExplodeGatling with Unity.
+`You need to rebuild the event every time you end a modification.
+`This mod use in melonloader.
+
+Unity work
+```C#
+//推荐将shooter组件往下挪一些
+```
 SuperExplodeGatling.Csproj
 ```C#
 <ItemGroup>
@@ -94,12 +103,14 @@ public class SuperDoomGaltling:MonoBehaviour
     {
         //patch阻断获得子弹方法，使用prefix
         [HarmonoyPrefix]
-        public static bool Prefix(SuperGatling __instance,BulletType __result)
+        //测试发现其并未阻断，需要写REF关键字，ref可以暗引用传递
+        public static bool Prefix(SuperGatling __instance,ref BulletType __result)
         {
             //正常情况不阻断
             if(__instance.plantType==SuperExplodeGatling.PlantID)
             {
-                __result=SuperExplodeGatling.bulletID;
+                //需要重新构建事件
+                __result = SuperExplodeGatling.BlletID;
                 //return false后，SuperGatling.GetBulletType就不再执行
                 return false;
             }
