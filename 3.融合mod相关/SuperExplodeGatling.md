@@ -1,4 +1,10 @@
-Core
+SuperExplodeGatling.Csproj
+```C#
+<ItemGroup>
+    <EmbeddedResource include="SuperExplodeGatling"<ItemGroup>
+```
+
+Core. Cs
 ```C#
 using System.Text;
 using Il2CppInterop.Runtime.Injection;
@@ -21,24 +27,85 @@ public class core：MelonMod
           //注册植物，
           CustomCore.RegisterCustomPlant<SuperGatling,SuperExplodeGatling>(
               //id
+              SuperExplodeGatling.PlantID,
+              //预制体
+              ab.GetAsset<Gameobject>("SuperGatlingPrefab"),
+              //预览图
+              ab.GetAsset<Gameobject>("SuperGatlingPreview"),
+              //配方fusions：
+              new List<int,int>{((int)PlantType.SuperGatling,(int)PlantType.UltimateExplodeCannon),
+                  ((int)PlantType.UltimateExplodeCannon,(int)PlantType.SuperGatling),
+              },
+              //attackInterval:
+              1.5f
+              //produceInterval:
+              0,
+              //attackDamage:
+              300,
+              //maxHealth
+              300,
+              //cd:
+              10f
+              //sun:1000
               
+          );
+          //注册图鉴
+          Customcore.AddPlantAlmanacStrings(
+          UltimateExplodeCannon.PlantID,
+          //name:
+          //重新构建后，需要重新构建事件（PlantID）
+          "超级爆破机枪射手("+SuperExplodeGatling.PlantID+")",
+          //description:
+          "<color=#0000FF>一次发射6个爆米花子弹<color>\n"+
+          "<color=#905000>韧性<color>300\n"+
+          "<color=#905000>融合配方<color>超级机枪射手+究极爆破加农炮\n"
+          
           );
       }
 }
 
 ```
 
-Plant
+SuperExplodeGatling. Cs
 ```C#
 namespace SuperExplodeGatling;
 [RegisterTypeInIl2Cpp]
 public class SuperDoomGaltling:MonoBehaviour
 {
-    //植物ID，目前还不可以大于2048，也注意不要和游戏内的重复,2421
+    //植物ID
     public static int PlantID=667;
     //子弹ID
-    public static BulletType BulletID=BulletType.bullet_;
+    public static BulletType BulletID=BulletType.bullet_splat;
     
+    public SuperExplodeGatling plant=gameObject.GetComponent<SuperGatling>();
+    
+    //事件函数：Awake
+    //构建事件属性异常只需要把事件属性(平台目标)改为x64，并重新构建所选项目
+    //遇到打包资源过小没有将资源打包进，则需要手动添加SuperExplodeGatling.dll进入SuperExplodeGatling.Csproj，然后重新构建事件
+    
+    private void Awake()
+    {
+        plant.shoot=plant.gameObject.transform.GetChild(0).FindChild("Shoot");
+    }
+    //超级机枪射手有一种获得子弹的方法，因此需要对其进行修改
+    //但是由于IL2CPP的限制，因此这里不能使用继承，此处不能继承，只能使用Patch
+    [HarmonyPatch(typeof(SuperGatling),nameof(SuperGatling.GetBulletType))]
+    public class MyClass
+    {
+        //patch阻断获得子弹方法，使用prefix
+        [HarmonoyPrefix]
+        public static bool Prefix(SuperGatling __instance,BulletType __result)
+        {
+            //正常情况不阻断
+            if(__instance.plantType==SuperExplodeGatling.PlantID)
+            {
+                __result=B
+                //return false后，SuperGatling.GetBulletType就不再执行
+                return false;
+            }
+            return true;
+        }
+    }
     
 }
 ```
