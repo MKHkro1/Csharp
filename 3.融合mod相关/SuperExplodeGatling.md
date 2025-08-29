@@ -9,6 +9,7 @@ Unity work
 ```
 SuperExplodeGatling.Csproj
 ```C#
+//此处由于项目过小，需要手动写入
 <ItemGroup>
     <EmbeddedResource include="SuperExplodeGatling"<ItemGroup>
 ```
