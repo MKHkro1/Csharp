@@ -22,7 +22,7 @@ Core. Cs
 using System.Text;
 using Il2CppInterop.Runtime.Injection;
 using MelonLoader;
-[assembly:MelonInfo(typeof(SuperExplodeGatling.Core),"SuperDoommGatling","1.0.0","likefengzi")]
+[assembly:MelonInfo(typeof(SuperExplodeGatling.Core),"SuperDoommGatling","1.0.0","WuXuanMengXi")]
 [assembly:MelonGame("LanPiaoPiao","PlantsVsZombiesRH")]
 [assembly:MelonlatformDomain(MelonPlatformDomainAttribute.CompatibleDomains.IL2CPP)]
 namespace SuperExplodeGatling;
