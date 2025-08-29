@@ -99,7 +99,7 @@ public class SuperDoomGaltling:MonoBehaviour
             //正常情况不阻断
             if(__instance.plantType==SuperExplodeGatling.PlantID)
             {
-                __result=B
+                __result=SuperExplodeGatling.bulletID;
                 //return false后，SuperGatling.GetBulletType就不再执行
                 return false;
             }
