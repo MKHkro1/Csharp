@@ -1,7 +1,7 @@
-`Use in rider with net 6.
-`You neet to make a SuperExplodeGatling with Unity.
-`You need to rebuild the event every time you end a modification.
-`This mod use in melonloader.
+`Use in rider with net 6.`
+`You neet to make a SuperExplodeGatling with Unity.`
+`You need to rebuild the event every time you end a modification.`
+`This mod use in melonloader.`
 
 Unity work
 ```C#
