@@ -51,7 +51,7 @@ public class core：MelonMod
               //produceInterval:
               0,
               //attackDamage:
-              300,
+              1800,
               //maxHealth
               300,
               //cd:
@@ -59,6 +59,8 @@ public class core：MelonMod
               //sun:1000
               
           );
+          //添加一些特殊效果：
+          CustomCore.TypeMgrExtra.isPuff.Add();
           //注册图鉴
           Customcore.AddPlantAlmanacStrings(
           UltimateExplodeCannon.PlantID,
