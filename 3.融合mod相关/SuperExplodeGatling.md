@@ -59,8 +59,12 @@ public class core：MelonMod
               //sun:1000
               
           );
+          //使用前置库中的一些预制指令，可以添加一些植物属性，额外发挥其他的功能效果
           //添加一些特殊效果,这个是小喷菇模块，可以一个各自叠种三个
           //CustomCore.TypeMgrExtra.isPuff.Add((PlantType)SuperExplodeGatling.PlantID);
+          //添加一些特殊效果,这个是磁力系统模块，可以和磁力植物进行链接
+          //CustomCore.TypeMgrExtra.IsMagnetPlnts.Add((PlantType)SuperExplodeGatling.PlantID);
+          //etc
           //注册图鉴
           Customcore.AddPlantAlmanacStrings(
           UltimateExplodeCannon.PlantID,
