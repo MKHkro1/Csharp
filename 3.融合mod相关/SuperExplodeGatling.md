@@ -94,6 +94,7 @@ public class SuperDoomGaltling:MonoBehaviour
     //植物ID
     public static int PlantID=667;
     //子弹ID
+    //注意!!!此处需要核实与前置库对应的子弹序列是否正确！
     public static BulletType BulletID=BulletType.bullet_splat;
     
     public SuperExplodeGatling plant=gameObject.GetComponent<SuperGatling>();
