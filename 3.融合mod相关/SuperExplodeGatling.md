@@ -50,7 +50,7 @@ public class core：MelonMod
                   ((int)PlantType.UltimateExplodeCannon,(int)PlantType.SuperGatling),
               },
               //attackInterval:
-              1.5f
+              1.5f,
               //produceInterval:
               0,
               //attackDamage:
