@@ -36,7 +36,7 @@ public class core：MelonMod
           //注册类
           ClassInjector.RegisterTypeInIl2Cpp<SuperExplodeGatling>();
           //读取刚刚的打包文件,获得资源文件
-          var ab=CustomCore.GetAssetBundle(System.Reflection.Assembly.GetExecutingAssembly(),"superdoomgatling");
+          var ab=CustomCore.GetAssetBundle(System.Reflection.Assembly.GetExecutingAssembly(),"SuperExplodeGatling");
           //注册植物，
           CustomCore.RegisterCustomPlant<SuperGatling,SuperExplodeGatling>(
               //id
@@ -89,7 +89,7 @@ SuperExplodeGatling. Cs
 ```C#
 namespace SuperExplodeGatling;
 [RegisterTypeInIl2Cpp]
-public class SuperDoomGaltling:MonoBehaviour
+public class SuperExplodeGatling:MonoBehaviour
 {
     //植物ID
     public static int PlantID = 667;
