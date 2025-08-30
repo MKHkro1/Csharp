@@ -22,7 +22,7 @@ Core. Cs
 using System.Text;
 using Il2CppInterop.Runtime.Injection;
 using MelonLoader;
-[assembly:MelonInfo(typeof(SuperExplodeGatling.Core),"SuperDoommGatling","1.0.0","WuXuanMengXi")]
+[assembly:MelonInfo(typeof(SuperExplodeGatling.Core),"SuperExplodeGatling","1.0.0","WuXuanMengXi")]
 [assembly:MelonGame("LanPiaoPiao","PlantsVsZombiesRH")]
 [assembly:MelonlatformDomain(MelonPlatformDomainAttribute.CompatibleDomains.IL2CPP)]
 namespace SuperExplodeGatling;
@@ -69,7 +69,7 @@ public class core：MelonMod
           //CustomCore.TypeMgrExtra.IsMagnetPlnts.Add((PlantType)SuperExplodeGatling.PlantID);
           //etc
           //注册图鉴
-          Customcore.AddPlantAlmanacStrings(
+          CustomCore.AddPlantAlmanacStrings(
           UltimateExplodeCannon.PlantID,
           //name:
           //重新构建后，需要重新构建事件（PlantID）
@@ -92,12 +92,12 @@ namespace SuperExplodeGatling;
 public class SuperDoomGaltling:MonoBehaviour
 {
     //植物ID
-    public static int PlantID=667;
+    public static int PlantID = 667;
     //子弹ID
     //注意!!!此处需要核实与前置库对应的子弹序列是否正确！
-    public static BulletType BulletID=BulletType.bullet_splat;
+    public static BulletType BulletID = BulletType.bullet_cherryjalapeno;
     
-    public SuperExplodeGatling plant=gameObject.GetComponent<SuperGatling>();
+    public SuperExplodeGatling plant = gameObject.GetComponent<SuperGatling>();
     
     //事件函数：Awake
     //构建事件属性异常只需要把事件属性(平台目标)改为x64，并重新构建所选项目
