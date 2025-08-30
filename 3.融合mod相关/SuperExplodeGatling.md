@@ -75,9 +75,7 @@ public class core：MelonMod
           //重新构建后，需要重新构建事件（PlantID）
           "超级爆破机枪射手("+SuperExplodeGatling.PlantID+")",
           //description:
-          "<color=#0000FF>一次发射6个爆米花子弹<color>\n"+
-          "<color=#905000>韧性<color>300\n"+
-          "<color=#905000>融合配方<color>超级机枪射手+究极爆破加农炮\n"
+          
           
           );
       }
