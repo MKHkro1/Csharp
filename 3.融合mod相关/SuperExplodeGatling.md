@@ -94,8 +94,7 @@ public class SuperExplodeGatling:MonoBehaviour
     //子弹ID
     //注意!!!此处需要核实与前置库对应的子弹序列是否正确！
     public static BulletType BulletID = BulletType.bullet_cherryjalapeno;
-    
-    public SuperExplodeGatling plant = gameObject.GetComponent<SuperGatling>();
+    public SuperExplodeGatling plant = gameObject.GetComponent <SuperGatling> ();
     
     //事件函数：Awake
     //构建事件属性异常只需要把事件属性(平台目标)改为x64，并重新构建所选项目
