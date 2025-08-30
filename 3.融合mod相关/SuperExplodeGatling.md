@@ -85,6 +85,9 @@ public class core：MelonMod
 
 SuperExplodeGatling. Cs
 ```C#
+using System.Text;
+using Il2CppInterop.Runtime.Injection;
+using MelonLoader;
 namespace SuperExplodeGatling;
 [RegisterTypeInIl2Cpp]
 public class SuperExplodeGatling:MonoBehaviour
