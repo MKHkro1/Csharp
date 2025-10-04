@@ -25,3 +25,23 @@ UnityCrashHandler 32/64 显示位数
 根据 BeplnEx 协议，首次启动要求从github 库中下载对应的必要文件
 严格来讲，这些文件不能在传播unity-libs
 
+启动一次即安装成功
+
+# 控制台的启动
+`BeplnEx\config\BeplnEx.cfg` (配置文件)
+打开 Logging. Console，
+将其改为 enable = true, 启用控制台
+
+用以开发并收集 log 和 debug
+
+# BeplnEx插件
+有许多好用的插件：
+Eg：
+UnityExplorer：unity 浏览器
+
+
+
+
+
+
+
