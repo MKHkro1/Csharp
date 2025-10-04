@@ -36,9 +36,12 @@ UnityCrashHandler 32/64 显示位数
 
 # BeplnEx插件
 有许多好用的插件：
-Eg：
-UnityExplorer：unity 浏览器
+`eg：` UnityExplorer：unity 浏览器
 
+使用方法放入 plugins 文件中即可
+
+常用 ObjectExplorer 和 Inspector
+查看物体，及其信息
 
 
 
