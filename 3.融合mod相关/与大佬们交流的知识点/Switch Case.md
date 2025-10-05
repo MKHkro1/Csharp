@@ -10,4 +10,3 @@ Itemtype 里确实有，不知道高数这个里面是哪个（）
 
 ![28595af1416d99be2a51f73b10cd7038.png](https://picgo18719498306.oss-cn-guangzhou.aliyuncs.com/28595af1416d99be2a51f73b10cd7038.png)
 
-
