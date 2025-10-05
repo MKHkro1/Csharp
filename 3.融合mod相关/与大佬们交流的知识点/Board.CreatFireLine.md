@@ -4,5 +4,3 @@
 此 action 可以对性能进行优化：
 使用协程将伤害计算分散到逐帧执行
 避免单帧内大量僵尸造成的性能峰值
-
-![image.png](https://picgo18719498306.oss-cn-guangzhou.aliyuncs.com/20251005183850890.png)
