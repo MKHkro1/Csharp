@@ -56,3 +56,27 @@ emmm……bullettype应该不是一个名吧？
 类你怎么转enum
 
 你可以 (bullettype)13 也可以 bullettype.bullet_firepea
+
+### 1. **子弹类型枚举转换**
+csharp
+// 这两种方式都可以
+(bullettype)13  // 直接转数字
+bullettype.bullet_firepea  // 使用枚举名
+
+### 2. **资源查找问题**
+- **大哥分解图**：在prefab里每个部件都有sprite引用，通过这些引用可以找到对应的分解图sprite
+- **sprite位置**：解包后的sprite通常不在原图位置，但有对应的独立图片文件
+
+### 3. **类继承关系**
+- 大哥继承冰大哥的类
+- 小火豆使用 `Bullet_firePea` 脚本
+- 超火也用了同一个脚本，可能通过bullettype区分
+
+### 4. **建议解决方案**
+- 找魅惑大哥的分解图作为参考模板
+- 通过prefab部件溯源sprite引用
+- 使用枚举名称而不是硬编码数字，提高可读性
+
+### 5. **植物命名混乱**
+- 需要去图鉴找编号，再对应planttype
+- 特殊命名：peanut, nutshooter 等
