@@ -1,0 +1,1 @@
+修改版.\MelonLoader\Dependencies\Il 2 CppAssemblyGenerator\Il 2 CppAssemblyGenerator. Dll，跳过网络检查
