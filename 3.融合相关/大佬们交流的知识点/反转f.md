@@ -1,11 +1,15 @@
 我这么写除了套的多点没有别的问题吧？
 ![5d012417c8d97f68f2ffbd8a487de574.png](https://picgo18719498306.oss-cn-guangzhou.aliyuncs.com/5d012417c8d97f68f2ffbd8a487de574.png)
-
+```C
+[HarmonyPatch(typeof(Input))]0个引用public class MousePatch[HarmonyPatch (nameof (Input.GetMouseButtonDown))][HarmonyPostfix]0个引用public static void Postfix(ref int button,bool result)if(button ==1&result)Vector2 mouseposition Camera.main.ScreenToWorldPoint (Input.mousePosition):RaycastHit2D[]hit Physics2D.RaycastAll(mouseposition,Vector2.zero):for (int i=0;i<hit.Length:itt)if (hit[i].collider.TryGetComponent (out Plant plant))if (plant.wheatType !=0)plant.wheatTime 31f:plant.WheatUpdate(:continue:if(hit[i].collider.TryGetComponent (out Mower mower))if(!mower.started){mower.StartMove(
+```
 建议反转 if
 
 就反了一个
 ![5f8278149279b8a4ed98a9d812d8bdd5.png](https://picgo18719498306.oss-cn-guangzhou.aliyuncs.com/5f8278149279b8a4ed98a9d812d8bdd5.png)
-
+```C
+[HarmonyPatch(typeof(Input))]0个用public class MousePatch[HarmonyPatch(nameof (Input.GetMouseButtonDown))][HarmonyPostfix]0个引用public static void Postfix(ref int button,boolresult)if(button !1!result)return:Vector2 mouseposition Camera.main.ScreenToWorldPoint(Input.mousePosition):RaycastHit2D[]hit Physics2D.RaycastAll(mouseposition,Vector2.zero):for (int i=0:i<hit.Length:i+)if (hit[i].collider.TryGetComponent (out Plant plant))if (plant.wheatType !=0)plant.wheatTime 31f;plant.WheatUpdateO;continue:if (hit[i].collider.TryGetComponent(out Mowermower))if(!mower.started)mower.StartMove():
+```
 问题是我右击之后它掉卡了
 
 我好像知道了

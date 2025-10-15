@@ -13,3 +13,5 @@
 也有可能牢战在触发吞噬的时候还造成了一次足够破坏头盔的伤害，所以触发了随机词条并报错
 ![e662f34e5b529ececf85f68764308ef7_720.jpg](https://picgo18719498306.oss-cn-guangzhou.aliyuncs.com/e662f34e5b529ececf85f68764308ef7_720.jpg)
 牢战变呆子了
+
+突然发现毁灭菇类被压爆不会调用 die 方法
