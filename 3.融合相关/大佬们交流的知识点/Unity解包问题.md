@@ -13,6 +13,7 @@ ExportedProject没问题
 贴图都是 png
 
 Png 都有
+
 那就是 asset 未正确引用或者是 material 用错了
 我个人更倾向于第二种解释
 
