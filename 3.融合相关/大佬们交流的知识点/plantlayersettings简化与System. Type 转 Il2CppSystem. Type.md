@@ -31,3 +31,13 @@ Il 2 CppSystem.Type.GetType (name);
 
 Name 传的是字符串
 
+
+> [!鲑鱼]
+> Il2CppType.From()
+> 
+
+
+> [!高数]
+> 有个gettype
+> Il2CppSystem.Type.GetType(name);
+> name传的是字符串
