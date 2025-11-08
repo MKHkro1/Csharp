@@ -122,4 +122,60 @@ if (CustomCore.CustomPlants.Count > 0)
 
 阿巴阿巴
 
+感觉最高 ID 不能超过 65535（）
 
+65536 x 65536 大小的二维数组
+
+吓哭了
+
+而且占内存挺大的（）
+
+不过 MixData. Data 和 MixData. RandomData 好像可以不扩）
+
+对的（）
+
+但是要弄融合配方就必须扩（）
+
+Mixdata 不是有个 add 吗
+
+《啊？》
+
+Addordered，添加有序配方
+好像是这个名字来着
+
+我只知道不扩的话如果有 ID 超大的植物在场那么可以融合的植物就不会发光了（）
+
+还真有啊（）
+
+我那个简化配方就是用这个写的
+
+还有一个添加无序配方的
+
+![dac5fcd7128a8303b65a301f81458ef2.png](https://picgo18719498306.oss-cn-guangzhou.aliyuncs.com/dac5fcd7128a8303b65a301f81458ef2.png)
+
+就是在 order 前面加个 un
+
+第一个是底座，第二个是融合植物，第三个是结果植物
+
+那这个会自动扩容吗🤔
+
+不知道啊，我添加过一大堆原有植物的配方，比如机枪+三线＝炮台这样的
+
+好像之前什么版本还有 GetMixResult（？）
+
+IDA 启动（）
+
+Bullet. Die 然后 set 几个阳光？
+
+![e934aa437775c549d6e70a1162414edb_720.png](https://picgo18719498306.oss-cn-guangzhou.aliyuncs.com/e934aa437775c549d6e70a1162414edb_720.png)
+不发光但是依旧可以融合（）
+
+你怎么加的
+
+CustomCore. RegisterCustomPlant
+
+culib 直接 Cast<Il2CppSystem.Array>() 然后 SetValue 的
+
+怪不得
+
+哦... 那俩二维数组的扩展就不能把 ID 超过 2048 的植物当作合成素材了（）
