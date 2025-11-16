@@ -8,3 +8,7 @@ core
 
 其中interop里面部分文件与unity-libs重复，优先考虑interop
 
+```
+core unitylib interop
+```
+
