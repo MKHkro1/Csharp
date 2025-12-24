@@ -69,3 +69,7 @@ Press any key to exit...
 要下 python 环境的 IDA
 
 反汇编之后按F5之后是转换为伪代码(Pseudocode)，不是C
+
+### **重新分析整个程序**
+
+`菜单操作：Analysis → Reanalyze program 快捷键：Ctrl + F5`
