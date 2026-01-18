@@ -72,4 +72,9 @@ Press any key to exit...
 
 ### **重新分析整个程序**
 
-`菜单操作：Analysis → Reanalyze program 快捷键：Ctrl + F5`
+`菜单操作：Analysis → Reanalyze program 快捷键：Ctrl + F5
+
+# 导出文件
+![image.png](https://picgo18719498306.oss-cn-guangzhou.aliyuncs.com/20260118122628765.png)
+
+`
